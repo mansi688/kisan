@@ -28,6 +28,9 @@ const demoRoutes = require('./routes/demo');
 ensureStore();
 
 const app = express();
+const app = express();
+// Trust Render's proxy for correct IP tracking and rate-limiting
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 4000;
 const isProd = process.env.NODE_ENV === 'production';
 
