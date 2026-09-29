@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  [DEPLOYMENT DOMAIN TO BE CONFIGURED] — every <loc> below uses a
+  placeholder https://example.com. Replace it with the platform's real
+  production domain before this sitemap is submitted to any search engine
+  or referenced from robots.txt in production.
+
+  Only genuinely public, indexable pages are listed here — no authenticated
+  dashboards (/dashboard, /financer/*, /wsp/*, /admin/* portal routes), no
+  login-only pages, no API routes, and no system pages (404).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://example.com/about</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/how-it-works</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/for-farmers</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/for-financers</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/for-warehouses</loc><priority>0.8</priority></url>
+  <url><loc>https://example.com/market</loc><priority>0.6</priority></url>
+  <url><loc>https://example.com/demo</loc><priority>0.7</priority></url>
+  <url><loc>https://example.com/security</loc><priority>0.5</priority></url>
+  <url><loc>https://example.com/faq</loc><priority>0.6</priority></url>
+  <url><loc>https://example.com/help</loc><priority>0.5</priority></url>
+  <url><loc>https://example.com/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://example.com/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/terms</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/cookies</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/cookie-preferences</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/disclaimer</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/accessibility</loc><priority>0.3</priority></url>
+  <url><loc>https://example.com/grievance</loc><priority>0.3</priority></url>
+</urlset>

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "KisanUnnatti",
+    "slug": "kisanunnatti",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#F4EFE7",
+      "resizeMode": "contain"
+    },
+    "android": {
+      "package": "in.kisanunnatti.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F4EFE7"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "apiBaseUrl": "http://10.0.2.2:4000/api"
+    }
+  }
+}

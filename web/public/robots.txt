@@ -1,0 +1,22 @@
+# [DEPLOYMENT DOMAIN TO BE CONFIGURED] — update the Sitemap URL below to
+# the platform's real production domain before deploying.
+#
+# The public marketing site is fully crawlable. The authenticated portals
+# require a real login regardless of what a crawler does, but there's no
+# reason to invite indexing of app-shell routes that only ever show a
+# login form or redirect an unauthenticated visitor — so those are
+# excluded here, matching what sitemap.xml already leaves out.
+
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /warehouse
+Disallow: /financing
+Disallow: /auction
+Disallow: /settlements
+Disallow: /financer/
+Disallow: /wsp/
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://example.com/sitemap.xml

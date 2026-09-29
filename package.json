@@ -1,0 +1,14 @@
+{
+  "name": "kisanunnatti",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KisanUnnatti — commodity pledge finance platform (backend + web). Run everything from this folder.",
+  "engines": { "node": ">=18.11" },
+  "scripts": {
+    "setup": "node scripts/run.js setup",
+    "start": "node scripts/run.js start",
+    "dev": "node scripts/run.js dev",
+    "build": "npm --prefix web run build",
+    "seed": "node scripts/run.js seed"
+  }
+}

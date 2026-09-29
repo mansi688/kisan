@@ -1,0 +1,26 @@
+# Render.com blueprint (UNTESTED — written from Render's documented format).
+# Persistent disks require a paid instance type; on a free instance the JSON
+# data resets on every deploy/restart (fine for a throwaway demo, not for real use).
+services:
+  - type: web
+    name: kisanunnatti
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: FORCE_HTTPS
+        value: "true"
+      - key: DEMO_MODE
+        value: "true"      # set "false" (and SEED_DEMO "false") for a real launch
+      - key: ADMIN_PASSWORD
+        sync: false        # you will be asked to enter this in the dashboard
+    disk:
+      name: kisanunnatti-data
+      mountPath: /app/backend/data
+      sizeGB: 1

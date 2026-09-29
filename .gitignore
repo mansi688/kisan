@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets — never commit real credentials
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# JSON data store (contains real farmer PII once seeded/used — never commit)
+backend/data/
+
+# Build output
+web/dist/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+*.swp
+
+# Test/coverage artifacts
+coverage/
