@@ -27,13 +27,12 @@ const demoRoutes = require('./routes/demo');
 
 ensureStore();
 
+// --- PLACE IT RIGHT HERE ---
 const app = express();
-const app = express();
-// Trust Render's proxy for correct IP tracking and rate-limiting
 app.set('trust proxy', 1);
+
 const PORT = process.env.PORT || 4000;
 const isProd = process.env.NODE_ENV === 'production';
-
 // Vite's dev server defaults to port 5173, but silently picks the next free
 // port (5174, 5175, ...) whenever 5173 is already taken by something else —
 // extremely easy to hit without noticing, and from the browser's side it
